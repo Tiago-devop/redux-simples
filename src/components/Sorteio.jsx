@@ -6,7 +6,7 @@ import Card from './Card';
 function Sorteio(props) {
   const { min, max } = props;
   // eslint-disable-next-line radix
-  const randomNumber = parseInt(Math.random() * (max - min)) + min;
+  const randomNumber = parseInt(Math.random() * (max - min), 10) + min;
   return (
     <Card title="Sorteio de um Número" purple>
       <div>
